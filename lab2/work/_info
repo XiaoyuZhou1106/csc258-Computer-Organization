@@ -1,0 +1,262 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/DELL/Desktop/CSC258/lab2
+vhex0
+Z1 !s110 1558817641
+!i10b 1
+!s100 K]naaiS549<;PbTnELLW@0
+I6`AQL>f9HXg5OR2Y9AM]32
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1558817632
+Z4 8part3.v
+Z5 Fpart3.v
+L0 62
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1558817641.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|part3.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vhex1
+R1
+!i10b 1
+!s100 =PZEzV1=Z0Tcg?AY9m1:Q0
+IjgBVSOhkCb6NkL2a61OUR1
+R2
+R0
+R3
+R4
+R5
+L0 73
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex2
+R1
+!i10b 1
+!s100 7V^7[?TOL[8VY1RkV80Cd2
+Id?gA@bo_U@WSlI5]MX0U10
+R2
+R0
+R3
+R4
+R5
+L0 84
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex3
+R1
+!i10b 1
+!s100 9LBUB:IRZl^KUbfmdL@_C2
+ILn7SARVc5ISNh?d@3nUHW1
+R2
+R0
+R3
+R4
+R5
+L0 95
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex4
+R1
+!i10b 1
+!s100 fHAP8UcNhMHBLfjlonLDS1
+IjX8[RldcId^?3idDnQLGS2
+R2
+R0
+R3
+R4
+R5
+L0 106
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex5
+R1
+!i10b 1
+!s100 XVFSHG]ieM1zB[SK8e?N@1
+IL1`QRa2Sa0DRWioIEdiJb1
+R2
+R0
+R3
+R4
+R5
+L0 117
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex6
+R1
+!i10b 1
+!s100 =@iTNWzI:<dbI8Z9kUHMT1
+IX4WEK7mH^65EERYeEA1283
+R2
+R0
+R3
+R4
+R5
+L0 128
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vmux
+Z12 !s110 1559458180
+!i10b 1
+!s100 ;`SYggG9>o>2GU=2Vz:7J0
+IOkkzgb^WOcY@=ffn9KzzP0
+R2
+R0
+Z13 w1559458086
+Z14 8part2_test.v
+Z15 Fpart2_test.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z16 !s108 1559458180.000000
+Z17 !s107 part2_test.v|
+Z18 !s90 -reportprogress|300|-timescale|1ns/1ns|part2_test.v|
+!i113 1
+R10
+R11
+vmux1
+R12
+!i10b 1
+!s100 ]L`=k3@YB7j`5;dT>D4M20
+I0FMIF3bI;c@_Me5=DXPSW0
+R2
+R0
+R13
+R14
+R15
+L0 27
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+R11
+vmux2
+Z19 !s110 1559451585
+!i10b 1
+!s100 3PkM2DM0dI9nddVBnlS0E0
+IC;hJ8W5oT;Zg];:fYlVn13
+R2
+R0
+Z20 w1559451572
+Z21 8part2.v
+Z22 Fpart2.v
+L0 37
+R6
+r1
+!s85 0
+31
+Z23 !s108 1559451585.000000
+Z24 !s107 part2.v|
+Z25 !s90 -reportprogress|300|-timescale|1ns/1ns|part2.v|
+!i113 1
+R10
+R11
+vmux2to1
+!s110 1558801325
+!i10b 1
+!s100 TTIHj49<CR0@RI;z:V^^52
+I;;U2B[KUn:OCMzk>Rck643
+R2
+R0
+w1558745794
+8mux.v
+Fmux.v
+L0 18
+R6
+r1
+!s85 0
+31
+!s108 1558801324.000000
+!s107 mux.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|mux.v|
+!i113 1
+R10
+R11
+vmux3
+R19
+!i10b 1
+!s100 bi64NLF]o?>kN@>ekJmaV2
+IB1CCzeg;J[O2eSOn:iY0i1
+R2
+R0
+R20
+R21
+R22
+L0 47
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R10
+R11

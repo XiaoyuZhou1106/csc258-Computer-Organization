@@ -1,0 +1,38 @@
+module mux(LEDR, SW);
+    input [9:0] SW;
+    output [9:0] LEDR;
+
+    mux1 u1(
+        .u(SW[0]),
+        .w(SW[2]),
+        .s1(SW[9]),
+        .out1(Connection1)
+        );
+		  
+    mux2 u2(
+        .v(SW[1]),
+        .x(SW[3]),
+        .s1(SW[9]),
+        .out2(Connection2)
+        );
+
+    mux3 u3(
+        .in1(Connection1),
+        .in2(Connection2),
+        .s0(SW[8]),
+        .m(LEDR[0])
+        );  
+endmodule
+
+module full_adder(A, B, cin, S, cout);
+    input A; 
+    input B;
+	 input cin; 
+    output S;
+	 output cout;
+  
+    assign cout = A&B | A&cin | B&cin;
+	 assign S = A&~B&~cin | `A&~B&cin | A&B&cin | ~A&B&~cin 
+
+endmodule
+

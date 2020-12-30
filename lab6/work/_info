@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/DELL/Desktop/CSC258/lab6
+vcontrol
+Z1 !s110 1562553278
+!i10b 1
+!s100 XUXY2YTMmEmLW5<afjz>R1
+Izch41UY94kcm3e5A6CY?72
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1562553272
+Z4 8part222.v
+Z5 Fpart222.v
+L0 99
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1562553278.000000
+Z8 !s107 part222.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|part222.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 YFNK]@lPQVdE_=`D96B7J2
+I>KnYoc5D^;d^];m5MV4<63
+R2
+R0
+R3
+R4
+R5
+L0 196
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vfpga_top
+R1
+!i10b 1
+!s100 OPh4ml;o41Z`1aA[g5?012
+IlISiMbI6<68V3^bbAF78F0
+R2
+R0
+R3
+R4
+R5
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex_decoder
+R1
+!i10b 1
+!s100 @>i7Gk_zNZ4]Cm:O59<@?1
+IWha5ZJ9ocLLJN=DM?^5:K2
+R2
+R0
+R3
+R4
+R5
+L0 293
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vpart2
+R1
+!i10b 1
+!s100 mJU]fEif:ezB6a8LO=Xzj1
+IaDM:ab_2KKMiC^SVk^G`40
+R2
+R0
+R3
+R4
+R5
+L0 45
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsequence_detector
+!s110 1562423681
+!i10b 1
+!s100 a`>8ejV?G1Kg0=h`eAS[c3
+I1QT<mF>PcK[aHh0W`[@773
+R2
+R0
+w1562422431
+8part1.v
+Fpart1.v
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1562423681.000000
+!s107 part1.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|part1.v|
+!i113 1
+R10
+R11

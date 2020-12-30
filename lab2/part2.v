@@ -1,0 +1,55 @@
+module mux(LEDR, SW);
+    input [9:0] SW;
+    output [9:0] LEDR;
+
+    mux1 u1(
+        .u(SW[0]),
+        .w(SW[2]),
+        .s1(SW[9]),
+        .out1(Connection1)
+        );
+		  
+    mux2 u2(
+        .v(SW[1]),
+        .x(SW[3]),
+        .s1(SW[9]),
+        .out2(Connection2)
+        );
+
+    mux3 u3(
+        .in1(Connection1),
+        .in2(Connection2),
+        .s0(SW[8]),
+        .m(LEDR[0])
+        );  
+endmodule
+
+module mux1(u, w, s1, out1);
+    input u; //selected when s is 0
+    input w; //selected when s is 1
+    input s1; //select signal
+    output out1; //output
+  
+    assign out1 = s1 & w | ~s1 & u;
+
+endmodule
+
+module mux2(v, x, s1, out2);
+    input v; //selected when s is 0
+    input x; //selected when s is 1
+    input s1; //select signal
+    output out2; //output
+  
+    assign out2 = s1 & x | ~s1 & v;
+
+endmodule
+
+module mux3(in1, in2, s0, m);
+    input in1; //selected when s is 0
+    input in2; //selected when s is 1
+    input s0; //select signal
+    output m; //output
+  
+    assign m = s0 & in2 | ~s0 & in1;
+
+endmodule

@@ -1,0 +1,394 @@
+|mux
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+HEX0[0] <= hex:u0.o2
+HEX0[1] <= hex:u0.o3
+HEX0[2] <= hex:u0.o4
+HEX0[3] <= hex:u0.o5
+HEX0[4] <= hex:u0.o6
+HEX0[5] <= hex:u0.o7
+HEX0[6] <= hex:u0.o8
+HEX1[0] <= hex:u1.o2
+HEX1[1] <= hex:u1.o3
+HEX1[2] <= hex:u1.o4
+HEX1[3] <= hex:u1.o5
+HEX1[4] <= hex:u1.o6
+HEX1[5] <= hex:u1.o7
+HEX1[6] <= hex:u1.o8
+
+
+|mux|counter:a
+enable => enable.IN1
+clock => clock.IN8
+clearb => clearb.IN8
+Q[0] <= T_flipflop:h.Q
+Q[1] <= T_flipflop:g.Q
+Q[2] <= T_flipflop:f.Q
+Q[3] <= T_flipflop:e.Q
+Q[4] <= T_flipflop:d.Q
+Q[5] <= T_flipflop:c.Q
+Q[6] <= T_flipflop:b.Q
+Q[7] <= T_flipflop:a.Q
+
+
+|mux|counter:a|T_flipflop:a
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:a|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|counter:a|T_flipflop:b
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:b|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|counter:a|T_flipflop:c
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:c|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|counter:a|T_flipflop:d
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:d|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|counter:a|T_flipflop:e
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:e|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|counter:a|T_flipflop:f
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:f|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|counter:a|T_flipflop:g
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:g|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|counter:a|T_flipflop:h
+T => connect.IN1
+clock[0] => clock[0].IN1
+c[0] => c[0].IN1
+Q <= D_flipflop:dd.q
+
+
+|mux|counter:a|T_flipflop:h|D_flipflop:dd
+d => q~reg0.DATAIN
+clock[0] => q~reg0.CLK
+reset_n[0] => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u0
+in2 => in2.IN7
+in3 => in3.IN7
+in4 => in4.IN7
+in5 => in5.IN7
+o2 <= hex0:u1.out1
+o3 <= hex1:u2.out2
+o4 <= hex2:u3.out3
+o5 <= hex3:u4.out4
+o6 <= hex4:u5.out5
+o7 <= hex5:u6.out6
+o8 <= hex6:u7.out7
+
+
+|mux|hex:u0|hex0:u1
+c3 => out1.IN0
+c3 => out1.IN0
+c3 => out1.IN0
+c3 => out1.IN0
+c2 => out1.IN1
+c2 => out1.IN1
+c2 => out1.IN1
+c2 => out1.IN1
+c1 => out1.IN1
+c1 => out1.IN1
+c1 => out1.IN1
+c1 => out1.IN1
+c0 => out1.IN1
+c0 => out1.IN1
+c0 => out1.IN1
+c0 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u0|hex1:u2
+c3 => out2.IN0
+c3 => out2.IN0
+c3 => out2.IN0
+c2 => out2.IN0
+c2 => out2.IN1
+c2 => out2.IN1
+c1 => out2.IN1
+c1 => out2.IN1
+c1 => out2.IN1
+c0 => out2.IN1
+c0 => out2.IN1
+c0 => out2.IN1
+c0 => out2.IN1
+out2 <= out2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u0|hex2:u3
+c3 => out3.IN0
+c3 => out3.IN0
+c2 => out3.IN1
+c2 => out3.IN1
+c1 => out3.IN1
+c1 => out3.IN1
+c0 => out3.IN1
+c0 => out3.IN1
+out3 <= out3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u0|hex3:u4
+c3 => out4.IN0
+c3 => out4.IN0
+c2 => out4.IN1
+c2 => out4.IN0
+c2 => out4.IN1
+c2 => out4.IN0
+c1 => out4.IN1
+c1 => out4.IN1
+c1 => out4.IN1
+c1 => out4.IN1
+c0 => out4.IN1
+c0 => out4.IN1
+c0 => out4.IN1
+c0 => out4.IN1
+out4 <= out4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u0|hex4:u5
+c3 => out5.IN0
+c3 => out5.IN0
+c2 => out5.IN1
+c2 => out5.IN0
+c1 => out5.IN1
+c1 => out5.IN1
+c0 => out5.IN1
+c0 => out5.IN1
+out5 <= out5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u0|hex5:u6
+c3 => out6.IN0
+c3 => out6.IN0
+c3 => out6.IN0
+c2 => out6.IN1
+c2 => out6.IN1
+c1 => out6.IN1
+c1 => out6.IN1
+c1 => out6.IN1
+c0 => out6.IN1
+c0 => out6.IN1
+c0 => out6.IN1
+out6 <= out6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u0|hex6:u7
+c3 => out7.IN0
+c3 => out7.IN0
+c3 => out7.IN0
+c2 => out7.IN1
+c2 => out7.IN1
+c2 => out7.IN1
+c1 => out7.IN1
+c1 => out7.IN1
+c1 => out7.IN1
+c0 => out7.IN1
+c0 => out7.IN1
+out7 <= out7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u1
+in2 => in2.IN7
+in3 => in3.IN7
+in4 => in4.IN7
+in5 => in5.IN7
+o2 <= hex0:u1.out1
+o3 <= hex1:u2.out2
+o4 <= hex2:u3.out3
+o5 <= hex3:u4.out4
+o6 <= hex4:u5.out5
+o7 <= hex5:u6.out6
+o8 <= hex6:u7.out7
+
+
+|mux|hex:u1|hex0:u1
+c3 => out1.IN0
+c3 => out1.IN0
+c3 => out1.IN0
+c3 => out1.IN0
+c2 => out1.IN1
+c2 => out1.IN1
+c2 => out1.IN1
+c2 => out1.IN1
+c1 => out1.IN1
+c1 => out1.IN1
+c1 => out1.IN1
+c1 => out1.IN1
+c0 => out1.IN1
+c0 => out1.IN1
+c0 => out1.IN1
+c0 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u1|hex1:u2
+c3 => out2.IN0
+c3 => out2.IN0
+c3 => out2.IN0
+c2 => out2.IN0
+c2 => out2.IN1
+c2 => out2.IN1
+c1 => out2.IN1
+c1 => out2.IN1
+c1 => out2.IN1
+c0 => out2.IN1
+c0 => out2.IN1
+c0 => out2.IN1
+c0 => out2.IN1
+out2 <= out2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u1|hex2:u3
+c3 => out3.IN0
+c3 => out3.IN0
+c2 => out3.IN1
+c2 => out3.IN1
+c1 => out3.IN1
+c1 => out3.IN1
+c0 => out3.IN1
+c0 => out3.IN1
+out3 <= out3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u1|hex3:u4
+c3 => out4.IN0
+c3 => out4.IN0
+c2 => out4.IN1
+c2 => out4.IN0
+c2 => out4.IN1
+c2 => out4.IN0
+c1 => out4.IN1
+c1 => out4.IN1
+c1 => out4.IN1
+c1 => out4.IN1
+c0 => out4.IN1
+c0 => out4.IN1
+c0 => out4.IN1
+c0 => out4.IN1
+out4 <= out4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u1|hex4:u5
+c3 => out5.IN0
+c3 => out5.IN0
+c2 => out5.IN1
+c2 => out5.IN0
+c1 => out5.IN1
+c1 => out5.IN1
+c0 => out5.IN1
+c0 => out5.IN1
+out5 <= out5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u1|hex5:u6
+c3 => out6.IN0
+c3 => out6.IN0
+c3 => out6.IN0
+c2 => out6.IN1
+c2 => out6.IN1
+c1 => out6.IN1
+c1 => out6.IN1
+c1 => out6.IN1
+c0 => out6.IN1
+c0 => out6.IN1
+c0 => out6.IN1
+out6 <= out6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux|hex:u1|hex6:u7
+c3 => out7.IN0
+c3 => out7.IN0
+c3 => out7.IN0
+c2 => out7.IN1
+c2 => out7.IN1
+c2 => out7.IN1
+c1 => out7.IN1
+c1 => out7.IN1
+c1 => out7.IN1
+c0 => out7.IN1
+c0 => out7.IN1
+out7 <= out7.DB_MAX_OUTPUT_PORT_TYPE
+
+
